@@ -1,0 +1,126 @@
+.header {
+  text-align: center;
+  background: url("images/woman-984295_1280.jpg") no-repeat center center;
+  /*background: url("images/clothing-650381_1280.jpg") no-repeat center center;*/
+  /*background: url("images/sweaters-428626_1280.jpg") no-repeat center center;*/
+  /*background: url("images/clothing-1045948_1280.jpg") no-repeat center center;*/
+  background-size: cover;
+  padding: 8rem;
+  position: relative;
+  h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    color: #ffffff;
+    &.first {
+      left: 1em;
+      font-style: italic;
+      top: 50px;
+    }
+    &.second {
+      left: 2em;
+      top: 100px;
+      font-style: italic;
+    }
+  }
+}
+
+.header .main-header {
+  // color: #666;
+}
+
+.header-subnav {
+  float: none;
+  position: relative;
+  top: 8rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.header-subnav li {
+  float: none;
+  display: inline-block;
+}
+
+.header-subnav li a {
+  padding: 0.9rem 1rem 0.75rem;
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-subnav li a.is-active {
+  background: rgba(250, 250, 250, 0.7);
+  color: #333;
+}
+
+.header-subnav li a:hover {
+  background: rgba(250, 250, 250, 0.7);
+  color: #333;
+  transition: all .25s ease-in-out;
+}
+
+.item-wrapper {
+  padding: 20px;
+  border: 2px solid #efefef;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+.item-wrapper:hover .img-wrapper img {
+  -webkit-filter: grayscale(0);
+}
+.item-wrapper:hover .img-wrapper .add-to-cart {
+  bottom: 0;
+}
+
+.img-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper .add-to-cart {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #333;
+  padding: 16px 8px;
+  bottom: -50px;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+.img-wrapper .add-to-cart:hover {
+  background-color: #008cba;
+}
+.img-wrapper img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(1);
+  width: 100%;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+p {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.callout h3 {
+    color: red;
+}
+
+.callout p {
+    color: #545454;
+}

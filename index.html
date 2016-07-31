@@ -1,1 +1,80 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hojoy</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body ng-controller="MainController">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-image">
+                    <img src="images/logo.png" alt="" style="height: 37px;">
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#">Nam</a></li>
+                <li><a href="#">Nữ</a></li>
+                <li><a href="#">Trẻ em</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <h1 class="main-header first">Need new slogan!</h1>
+        <!-- <h1 class="main-header second">Hàng mới mỗi ngày</h1> -->
+        <ul class="header-subnav">
+            <li><a href="#">Bán chạy nhất</a></li>
+            <li><a href="#" class="is-active">Mới nhất</a></li>
+            <li><a href="#">Đang giảm giá</a></li>
+        </ul>
+    </header>
+    <br>
+    <div class="row column">
+        <div class="callout primary">
+            <h3>SIÊU KHUYẾN MÃI NOEL - CỰC XINH CỰC DUYÊN GIÁ CỰC SỐC</h3>
+            <p>
+                Để tri ân khách hàng đã ủng hộ Halin trong thời gian vừa qua, Halin mang đến cho khách hàng chương trình Siêu khuyến mãi Noel với nhiều mã hàng giảm giá cực sốc lên đến 50%. Ngoài chương trình Siêu giảm giá, với hóa đơn mua hàng trên 300K, các khách iu sẽ được tặng ngay một quần chíp xinh xắn. Đối với khách hàng mới đến ủng hộ Halin, hóa đơn 500K trong tay khách hàng cũng sẽ được nhận ngay một quần chíp xuất khẩu chất liệu êm ái thoáng mát vô cùng tận.
+            </p>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="row small-up-2 large-up-4" contentful-entries="'content_type=product&limit=8'">
+        <div class="small-4 columns" ng-repeat="item in $contentfulEntries.items">
+            <div class="item-wrapper">
+                <div class="img-wrapper">
+                    <a class="button expand add-to-cart">Mua ngay</a>
+                    <a href="#"><img ng-src="{{ item.fields.images[0].fields.file.url }}"></a>
+                </div>
+                <a href="#"><h3>{{ item.fields.name }}</h3></a>
+                <h5>{{ item.fields.price }} VND</h5>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.</p> -->
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="callout large secondary">
+        <div class="row">
+            <div class="large-4 columns">
+                <h5>Thông tin liên hệ</h5>
+                <ul>
+                    <li><strong>Địa chỉ:</strong> 20 Nguyễn Thượng Hiền, P.1, Q.Gò Vấp, HCM</li>
+                    <li><strong>Hotline:</strong> 0901 431 491</li>
+                    <li><strong>Email:</strong>  <a href="mailto:contact@halinfashion.com">contact@halinfashion.com</a></li>
+                    <li><strong>Chuyển khoản: </strong>0461000414612 - Võ Kiều Hân - Vietcombank - CN Sóng Thần</li>
+                </ul>
+            </div>
+            <div class="large-6 large-offset-2 columns">
+                <h5>Bản đồ</h5>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z6idx0shzoSk.ksm4sG9UO2WQ" width="100%" height="300" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="main.js"></script>
+</body>
+
+</html>

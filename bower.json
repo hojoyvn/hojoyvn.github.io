@@ -1,0 +1,21 @@
+{
+  "name": "halinshop",
+  "authors": [
+    "Au <phamvuau@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-contentful": "~2.0.0"
+  }
+}
